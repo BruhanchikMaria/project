@@ -4,6 +4,7 @@ public class Main2 {
            public static void main(String[] args) {
                CalculatorWithMath calcObject = new CalculatorWithMath();
 
+
                double div = calcObject.div(28, 5);
                double mul = calcObject.mul(15, 7);
 

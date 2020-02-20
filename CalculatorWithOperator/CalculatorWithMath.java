@@ -1,6 +1,6 @@
 package CalculatorWithOperator;
 
-public class CalculatorWithMath {
+public class CalculatorWithMath extends  CalculatorWithOperator implements ICalc{
     double a;
     double b;
 

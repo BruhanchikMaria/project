@@ -1,11 +1,8 @@
 package CalculatorWithOperator;
 
-public  class CalculatorWithOperator {
+public  class CalculatorWithOperator implements ICalc {
    double a;
    double b;
-
-    public static void step(double div, int b) {
-    }
 
     public  double plus(double a,double b) {
         return a + b;
