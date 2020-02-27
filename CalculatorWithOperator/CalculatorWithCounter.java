@@ -2,43 +2,44 @@ package CalculatorWithOperator;
 
 import Decorator.IBase;
 
-public class CalculatorWithCounter extends CalculatorWithMath implements ICalc{
+public class CalculatorWithCounter implements ICalc{
     private CalculatorWithOperator calc;
     private CalculatorWithMath calc2;
     private int count;
 
     public CalculatorWithCounter(CalculatorWithMath calc) {
         this.calc2 = calc;
+    }
 
+    public CalculatorWithCounter(CalculatorWithOperator calc) {
+        this.calc = calc;
+    }
+
+
+    public double step(double div, int b) {
+        return calc.step(div, b);
     }
 
     public double plus(double a, double b) {
         this.count++;
-        return a + b;
+        return calc.plus(a, b);
     }
 
     public double minus(double a, double b) {
         this.count++;
-        return a - b;
+        return calc.minus(a, b);
     }
 
     public double mul(double a, double b) {
         this.count++;
-        return a * b;
+        return calc.mul(a, b);
     }
-
-    public double step (double a,double b){
-        this.count++;
-        return Math.pow(a, b);
-    }
-
 
     public double div(double a, double b) {
         this.count++;
         if (b != 0.0) {
-            return Math.round(a / b);
+            return calc.div(a, b);
         } else {
-            System.out.println("На 0 делить нельзя!");
             return Double.NaN;
         }
         }
