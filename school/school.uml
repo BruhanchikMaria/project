@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="76.0" y="0.0">school.dto.IPeople</node>
+    <node x="0.0" y="102.0">school.dto.IStudent</node>
+    <node x="0.0" y="243.0">school.dto.LearningSubject</node>
+    <node x="293.0" y="243.0">school.dto.ISubject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="school.dto.IStudent" target="school.dto.IPeople">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="46.72727272727275" y="85.27272727272728" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
